@@ -25,26 +25,6 @@ O projeto possui duas versões principais:
 - Rodapé com informações de contato e mapa de localização
 - (Apenas na branch `master`) Vídeo de fundo na página inicial
 
-## 🔧 Como Executar o Projeto
-
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/indnet-telecom.git
-   ```
-2. Acesse o diretório do projeto:
-   ```bash
-   cd indnet-telecom
-   ```
-3. Para rodar a versão padrão (`main`):
-   ```bash
-   git checkout main
-   ```
-4. Para rodar a versão com vídeo (`master`):
-   ```bash
-   git checkout master
-   ```
-5. Abra o arquivo `index.html` no navegador.
-
 ## 📝 Licença
 
 Este projeto é de uso interno da INDNET TELECOM e não possui licença pública.
