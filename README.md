@@ -5,8 +5,8 @@ Este repositório contém o código-fonte do site Comercial da **INDNET TELECOM*
 ## 🔄 Versões do Projeto
 O projeto possui duas versões principais:
 
-- **Branch `main`**: Versão padrão do site com layout moderno e responsivo.
-- **Branch `master`**: Versão aprimorada com vídeo de fundo na seção principal para uma experiência mais imersiva.
+- **Branch `main`**: Versão aprimorada com vídeo de fundo na seção principal para uma experiência mais imersiva.
+- **Branch `master`**: Versão padrão do site com layout moderno e responsivo.
 
 ## 📂 Tecnologias Utilizadas
 
