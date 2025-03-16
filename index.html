@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDNET TELECOM</title>
+    <!-- Importando Bootstrap 5.1 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Seu CSS customizado -->
+    <link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="carrossel.css">
+	<link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <!-- Modal de Boas-Vindas -->
+    <div class="modal fade" id="welcomeModal" tabindex="-1" aria-labelledby="welcomeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content shadow-lg rounded-3">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="welcomeModalLabel">Bem-vindo à INDNET TELECOM</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Este site utiliza cookies para garantir que você tenha a melhor experiência. Clique em OK para aceitar.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="acceptCookies" class="btn btn-primary w-100 py-2" data-bs-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="bg-gradient p-3">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center">
+            <nav class="navbar navbar-expand-lg navbar-light" aria-label="Menu principal">
+                <button class="navbar-toggler d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="ms-2">Menu</span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white shadow-sm p-2 rounded" href="http://indnet.com.br:2095/3rdparty/roundcube/?_task=login" aria-label="Web Email">
+                                <i class="fas fa-envelope" aria-hidden="true"></i> Web Email
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white shadow-sm p-2 rounded" href="http://sipvoip.indnet.com.br/" aria-label="Central VOIP">
+                                <i class="fas fa-phone" aria-hidden="true"></i> Central VOIP
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white shadow-sm p-2 rounded" href="http://central.indnet.com.br/central" aria-label="Central do Assinante">
+                                <i class="fas fa-user" aria-hidden="true"></i> Central do Assinante
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Botão de Alto Contraste -->
+            <button id="toggle-contrast" class="btn btn-secondary ms-3">Alto Contraste</button>
+        </div>
+    </header>
+    
+    <main>
+		<section class="hero text-center text-white py-5" style="position: relative; overflow: hidden;">
+			<!-- Vídeo de fundo -->
+			<video autoplay muted loop playsinline class="bg-video">
+				<source src="intro.mp4" type="video/mp4">
+				Seu navegador não suporta o elemento de vídeo.
+			</video>
+			<div class="container position-relative" style="z-index: 2;">
+				<a href="index.html">
+					<img id="logo" src="logo.png" alt="INDNET TELECOM" class="hero-logo mb-3">
+				</a>
+				<h1 class="display-4">Bem-vindo à INDNET TELECOM</h1>
+				<p class="lead">Conectando você ao mundo com internet de qualidade e serviços confiáveis.</p>
+			</div>
+		</section>
+			
+        <section class="services py-5" aria-labelledby="services-heading">
+            <div class="container text-center">
+                <h2 id="services-heading" class="mb-4">Nossos Serviços</h2>
+                <div id="planCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" aria-label="Carrossel de Planos de Internet">
+                    <div class="carousel-inner" id="carouselItems">
+                        <!-- Os itens do carrossel serão gerados pelo JavaScript -->
+                    </div>
+                    <a class="carousel-control-prev" href="#planCarousel" role="button" data-bs-slide="prev" aria-label="Slide anterior">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#planCarousel" role="button" data-bs-slide="next" aria-label="Próximo slide">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Próximo</span>
+                    </a>
+                </div>
+                <!-- Container para a exibição da comparação -->
+                <div id="comparacaoContainer" class="mt-5"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4" aria-label="Rodapé">
+        <div class="container">
+            <p>Endereço: <a href="https://www.google.com/maps/search/?api=1&query=R.+Saint+Clair+de+Melo,+216+-+centro,+Indian%C3%B3polis+-+MG,+38490-000" class="text-white shadow-sm p-2 rounded" target="_blank" aria-label="Endereço: R. Saint Clair de Melo, 216 - centro, Indianópolis - MG, 38490-000 no Google Maps">R. Saint Clair de Melo, 216 - centro, Indianópolis - MG, 38490-000</a></p>
+            <p>Telefone: <a href="tel:+553432452580" class="text-white shadow-sm p-2 rounded" aria-label="Telefone para contato: (34) 3245-2580">(34) 3245-2580</a></p>
+            <p>WhatsApp: <a href="https://wa.me/5534996955731" class="text-white shadow-sm p-2 rounded" aria-label="Contato WhatsApp: (34) 99695-5731">(34) 99695-5731</a></p>
+            <p>Email: <a href="mailto:Email-financeiro@indnet.com.br" class="text-warning shadow-sm p-2 rounded" aria-label="Email para contato: Email-financeiro@indnet.com.br">Email-financeiro@indnet.com.br</a></p>
+        </div>
+    </footer>
+
+    <!-- Importando Bootstrap 5.1 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+    <!-- Seu JavaScript customizado -->
+    <script src="script.js"></script>
+	<script src="carrossel.js"></script>
+</body>
+</html>
