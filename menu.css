@@ -1,0 +1,53 @@
+/* Estilos do Menu */
+header {
+    background-color: #4CAF50;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Borda leve */
+    border-radius: 8px;
+    transition: color 0.3s ease, text-shadow 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Sombra mais intensa ao passar o mouse */
+    transform: translateY(-5px); /* Efeito de "pular" */
+}
+
+nav ul li a:active {
+    transform: translateY(2px); /* Efeito de "cair" */
+}
+
+/* Botão de Alto Contraste */
+#toggle-contrast {
+    background-color: #6c757d;
+    border: none;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+#toggle-contrast:hover {
+    background-color: #5a6268;
+}

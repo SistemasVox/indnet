@@ -1,0 +1,179 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Modo de Alto Contraste */
+.high-contrast {
+    background-color: #000 !important;
+    color: #FFF !important;
+}
+
+.high-contrast header {
+    background-color: #333 !important;
+}
+
+.high-contrast a {
+    color: #FFF !important;
+    text-decoration: underline;
+}
+
+.high-contrast a:hover {
+    color: #FFD700 !important;
+}
+
+.high-contrast footer {
+    background-color: #000 !important;
+}
+
+/* Seção principal */
+.hero {
+    background-color: #87CEFA;
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+/* Rodapé */
+footer {
+    background-color: #FFD700;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .contact-info p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease, box-shadow 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Melhorias de responsividade para o modal */
+@media (max-width: 576px) {
+    .modal-dialog {
+        max-width: 90%;
+        margin: 1.75rem auto;
+    }
+
+    .modal-footer {
+        padding: 1rem;
+    }
+
+    .modal-body {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .modal-header {
+        padding: 1rem;
+    }
+
+    .modal-content {
+        border-radius: 0.5rem;
+    }
+
+    /* Garante que o botão de OK ocupe toda a largura em telas menores */
+    .modal-footer .btn {
+        width: 100%;
+    }
+}
+
+/* Comparação */
+#comparacaoContainer {
+    margin-top: 30px;
+}
+
+#comparacaoContainer table {
+    width: 100%;
+}
+
+#comparacaoContainer th,
+#comparacaoContainer td {
+    padding: 10px;
+    text-align: center;
+}
+
+#comparacaoContainer th {
+    background-color: #007bff;
+    color: white;
+}
+
+#comparacaoContainer td {
+    background-color: #f8f9fa;
+}
+
+/* Contêiner e estilo das motos de luz */
+#tron-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: block;
+}
+
+.light-bike {
+    position: absolute;
+    width: 200px;
+    height: 10px;
+}
+
+/* Animações para movimento horizontal */
+@keyframes moveBikeHorizontal {
+    0% {
+        left: -200px;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+/* Outros Estilos */
+.hero-logo {
+    max-width: 400px;
+    height: auto;
+    transition: transform 0.2s ease;
+}
+
+@media (max-width: 768px) {
+    .hero-logo {
+        max-width: 200px;
+    }
+}
+
+.hero-logo:active {
+    transform: scale(1.1);
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+    pointer-events: none;
+}
